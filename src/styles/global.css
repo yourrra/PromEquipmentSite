@@ -1,6 +1,70 @@
+:root {
+  --black-color: #373737;
+  --white-color: #fff;
+  --green-color: #008a3f;
+  --yellow-color: #f5c000;
+  --font-primary: 'Roboto';
+  --font-secondary: yesteryear;
+}
+
+html {
+  color: var(--black-color);
+  font-family: var(--font-primary), system-ui;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
 body {
+  text-size-adjust: 100%;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd,
+pre,
+input,
+button,
+fieldset {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+#root {
+  min-height: 100%;
+}
+
+.wrapper {
+  margin: 0 16px;
+
+  @media (width >= 768px) {
+    margin: 0 auto;
+  }
+
+  @media (width >= 1440px) {
+    max-width: 1440px;
+  }
+}
+
+.wrapper-shadows {
+  position: fixed;
+  z-index: 1;
+  top: 0;
   width: 100%;
-  background: red;
-  font-size: 12px;
-  margin-top: 25px;
+  background: var(--white-color);
+  box-shadow: 0 1px 10px rgb(0 0 0 / 10%);
 }
