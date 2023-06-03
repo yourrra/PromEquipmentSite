@@ -1,4 +1,3 @@
-import React from 'react'
 import classes from './footer.module.css'
 import * as URLS from '../../constants/urls'
 import { Link } from 'react-router-dom'
