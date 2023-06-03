@@ -7,7 +7,6 @@ export function Header() {
     <div className="wrapper__shadows">
       <div className="wrapper">
         <header className={classes.header}>
-          //
           <div className={classes.header__logo}>
             <img
               className={classes.header__logo_img}
