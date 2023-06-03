@@ -60,7 +60,7 @@ li {
   }
 }
 
-.wrapper-shadows {
+.wrapper__shadows {
   position: fixed;
   z-index: 1;
   top: 0;

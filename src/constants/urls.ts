@@ -1,6 +1,10 @@
-export const MAIN = '/'
-export const ABOUT = '/about'
-export const CONTACTS = '/contacts'
-export const OBJECTS = '/objects'
-export const SERVICES = '/services'
-export const EQUIPMENT = '/equipment'
+enum ROUTES {
+  MAIN = '/',
+  ABOUT = '/about',
+  CONTACTS = '/contacts',
+  OBJECTS = '/objects',
+  SERVICES = '/services',
+  EQUIPMENT = '/equipment',
+}
+
+export { ROUTES }

@@ -89,7 +89,11 @@
     ],
     "plugins": [
       "stylelint-order"
-    ]
+    ],
+    "rules": {
+      "selector-class-pattern": null
+    }
+
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"

@@ -1,4 +1,4 @@
-import * as URLS from './constants/urls'
+// import * as URLS from './constants/urls'
 import { createBrowserRouter } from 'react-router-dom'
 import { Main } from './pages/Main'
 import { NotFound } from './pages/404'
@@ -8,35 +8,36 @@ import { Equipment } from './pages/Equipment'
 import { Objects } from './pages/Objects'
 import { Services } from './pages/Services'
 import { Root } from './Root'
+import { ROUTES } from './constants/urls'
 
 export const router = createBrowserRouter([
   {
-    path: URLS.MAIN,
+    path: ROUTES.MAIN,
     element: <Root />,
     errorElement: <NotFound />,
     children: [
       {
-        path: URLS.MAIN,
+        path: ROUTES.MAIN,
         element: <Main />,
       },
       {
-        path: URLS.ABOUT,
+        path: ROUTES.ABOUT,
         element: <About />,
       },
       {
-        path: URLS.CONTACTS,
+        path: ROUTES.CONTACTS,
         element: <Contacts />,
       },
       {
-        path: URLS.EQUIPMENT,
+        path: ROUTES.EQUIPMENT,
         element: <Equipment />,
       },
       {
-        path: URLS.OBJECTS,
+        path: ROUTES.OBJECTS,
         element: <Objects />,
       },
       {
-        path: URLS.SERVICES,
+        path: ROUTES.SERVICES,
         element: <Services />,
       },
     ],

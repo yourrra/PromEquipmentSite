@@ -1,5 +1,5 @@
+import { ROUTES } from '../../constants/urls'
 import classes from './footer.module.css'
-import * as URLS from '../../constants/urls'
 import { Link } from 'react-router-dom'
 
 export function Footer() {
@@ -17,32 +17,35 @@ export function Footer() {
           <nav className={classes.footer__nav}>
             <ul className={classes.footer__nav_wrapper}>
               <li>
-                <Link className={classes.footer__nav_link} to={URLS.MAIN}>
+                <Link className={classes.footer__nav_link} to={ROUTES.MAIN}>
                   Главная
                 </Link>
               </li>
               <li>
-                <Link className={classes.footer__nav_link} to={URLS.ABOUT}>
+                <Link className={classes.footer__nav_link} to={ROUTES.ABOUT}>
                   О Компании
                 </Link>
               </li>
               <li>
-                <Link className={classes.footer__nav_link} to={URLS.SERVICES}>
+                <Link className={classes.footer__nav_link} to={ROUTES.SERVICES}>
                   Услуги
                 </Link>
               </li>
               <li>
-                <Link className={classes.footer__nav_link} to={URLS.EQUIPMENT}>
+                <Link
+                  className={classes.footer__nav_link}
+                  to={ROUTES.EQUIPMENT}
+                >
                   Оборудование
                 </Link>
               </li>
               <li>
-                <Link className={classes.footer__nav_link} to={URLS.OBJECTS}>
+                <Link className={classes.footer__nav_link} to={ROUTES.OBJECTS}>
                   Объекты
                 </Link>
               </li>
               <li>
-                <Link className={classes.footer__nav_link} to={URLS.CONTACTS}>
+                <Link className={classes.footer__nav_link} to={ROUTES.CONTACTS}>
                   Контакты
                 </Link>
               </li>

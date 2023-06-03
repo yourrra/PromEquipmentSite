@@ -1,13 +1,13 @@
 import classes from './header.module.css'
 import { Link } from 'react-router-dom'
-import * as URLS from '../../constants/urls'
-// import logo from '../../assets/Logo.jpg'
+import { ROUTES } from '../../constants/urls'
 
 export function Header() {
   return (
     <div className="wrapper__shadows">
       <div className="wrapper">
         <header className={classes.header}>
+          //
           <div className={classes.header__logo}>
             <img
               className={classes.header__logo_img}
@@ -18,32 +18,35 @@ export function Header() {
           <nav className={classes.header__nav}>
             <ul className={classes.header__nav_wrapper}>
               <li>
-                <Link className={classes.header__nav_link} to={URLS.MAIN}>
+                <Link className={classes.header__nav_link} to={ROUTES.MAIN}>
                   Главная
                 </Link>
               </li>
               <li>
-                <Link className={classes.header__nav_link} to={URLS.ABOUT}>
+                <Link className={classes.header__nav_link} to={ROUTES.ABOUT}>
                   О Компании
                 </Link>
               </li>
               <li>
-                <Link className={classes.header__nav_link} to={URLS.SERVICES}>
+                <Link className={classes.header__nav_link} to={ROUTES.SERVICES}>
                   Услуги
                 </Link>
               </li>
               <li>
-                <Link className={classes.header__nav_link} to={URLS.EQUIPMENT}>
+                <Link
+                  className={classes.header__nav_link}
+                  to={ROUTES.EQUIPMENT}
+                >
                   Оборудование
                 </Link>
               </li>
               <li>
-                <Link className={classes.header__nav_link} to={URLS.OBJECTS}>
+                <Link className={classes.header__nav_link} to={ROUTES.OBJECTS}>
                   Объекты
                 </Link>
               </li>
               <li>
-                <Link className={classes.header__nav_link} to={URLS.CONTACTS}>
+                <Link className={classes.header__nav_link} to={ROUTES.CONTACTS}>
                   Контакты
                 </Link>
               </li>
