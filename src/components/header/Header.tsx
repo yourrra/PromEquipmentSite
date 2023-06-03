@@ -1,15 +1,13 @@
-import React from 'react'
 import classes from './header.module.css'
 import { Link } from 'react-router-dom'
 import { ROUTES } from '../../constants/urls'
-// import * as URLS from '../../constants/urls'
-// import logo from '../../assets/Logo.jpg'
 
 export function Header() {
   return (
     <div className="wrapper__shadows">
       <div className="wrapper">
         <header className={classes.header}>
+          //
           <div className={classes.header__logo}>
             <img
               className={classes.header__logo_img}

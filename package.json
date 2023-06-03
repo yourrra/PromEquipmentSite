@@ -89,13 +89,18 @@
     ],
     "plugins": [
       "stylelint-order"
-    ]
+    ],
+    "rules": {
+      "selector-class-pattern": null
+    }
+
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
   },
   "lint-staged": {
-    "*.(ts|tsx)": "pnpm run lint:ts"
+    "*.(ts|tsx)": "pnpm run lint:ts",
+    "*.css": "pnpm run lint:css"
   },
   "browserslist": [
     "last 2 versions",

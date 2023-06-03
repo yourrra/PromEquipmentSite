@@ -1,5 +1,17 @@
-import React from 'react'
+import classes from './about.module.css'
 
 export function About() {
-  return <div>О Компании</div>
+  return (
+    <div className="wrapper">
+      <div className={classes.about__wrapper}>
+        <h1>О компании</h1>
+        <p>
+          Компания «Агро-инжиниринг ЮГ» предлагает комплексные решения в сфере
+          хранения и переработки зерна. Современные технологии и многолетний
+          опыт специалистов компании позволяют создавать эффективные и
+          качественные продукты точно отвечающие потребностям наших клиентов.
+        </p>
+      </div>
+    </div>
+  )
 }
