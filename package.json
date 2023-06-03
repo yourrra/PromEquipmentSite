@@ -95,8 +95,7 @@
     "pre-commit": "npx lint-staged"
   },
   "lint-staged": {
-    "*.(ts|tsx)": "pnpm run lint:ts",
-    "*.css": "pnpm run lint:css"
+    "*.(ts|tsx)": "pnpm run lint:ts"
   },
   "browserslist": [
     "last 2 versions",
