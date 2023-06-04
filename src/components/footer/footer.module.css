@@ -5,20 +5,35 @@
 
 .footer {
   display: grid;
-  align-items: center;
+  align-items: start;
   padding: 25px 0;
   gap: 35px;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .footer__logo {
   display: grid;
-  align-items: center;
-  justify-content: start;
 }
 
 .footer__logo_img {
   height: 50px;
+  margin-bottom: 5px;
+}
+
+.footer__logo_title {
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.footer__logo_description {
+  margin-bottom: 10px;
+  color: #c7c6c6;
+  font-size: 14px;
+}
+
+.footer__logo_rule {
+  color: #fff;
+  font-size: 12px;
 }
 
 .footer_nav {
@@ -29,30 +44,28 @@
 
 .footer__nav_wrapper {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  gap: 25px;
+  gap: 6px;
 }
 
 .footer__nav_link {
-  color: #6d6d6d;
+  color: #fff;
   cursor: pointer;
-  font-size: 22px;
   font-weight: 400;
   text-decoration: none;
   white-space: nowrap;
 
   &:active,
-  &:hover,
-  &:focus {
-    color: #008a3f;
+  &:hover {
+    color: #f5c000;
   }
 }
 
 .footer__contact {
   display: grid;
-  align-items: center;
   justify-content: end;
+  gap: 6px;
 }
 
 .footer__contact_connect {
@@ -60,18 +73,24 @@
   gap: 10px;
 
   img {
+    width: 20px;
+    height: 20px;
     margin-top: 2px;
   }
 }
 
 .footer__contact_link {
-  color: #6d6d6d;
+  color: #fff;
   text-decoration: none;
   white-space: nowrap;
 
   &:active,
   &:hover,
   &:focus {
-    color: #008a3f;
+    color: #f5c000;
   }
+}
+
+.footer__contact_address {
+  color: #fff;
 }

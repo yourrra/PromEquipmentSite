@@ -13,6 +13,15 @@ export function Footer() {
               src="./Logo-wh.svg"
               alt="logo"
             />
+            <p className={classes.footer__logo_title}>MMMMMM PPPPPP SSSSS</p>
+            <p className={classes.footer__logo_description}>
+              Завод «Спецэлеватормельмаш» обеспечивает надежной техникой
+              клиентов уже не первый год, накапливая опыт, который помогает в
+              реализации проектов любой сложности.
+            </p>
+            <p className={classes.footer__logo_rule}>
+              Все права защищены. 2023 год.
+            </p>
           </div>
           <nav className={classes.footer__nav}>
             <ul className={classes.footer__nav_wrapper}>
@@ -51,9 +60,28 @@ export function Footer() {
               </li>
             </ul>
           </nav>
+          <nav className={classes.footer__nav}>
+            <ul className={classes.footer__nav_wrapper}>
+              <li>
+                <Link className={classes.footer__nav_link} to={ROUTES.MAIN}>
+                  Конвейеры
+                </Link>
+              </li>
+              <li>
+                <Link className={classes.footer__nav_link} to={ROUTES.ABOUT}>
+                  Нории
+                </Link>
+              </li>
+              <li>
+                <Link className={classes.footer__nav_link} to={ROUTES.SERVICES}>
+                  Гравитационное оборудование
+                </Link>
+              </li>
+            </ul>
+          </nav>
           <div className={classes.footer__contact}>
             <div className={classes.footer__contact_connect}>
-              <img height={20} src="./mail-icon.svg" alt="mail-icon" />
+              <img src="./mail-icon-yl.svg" alt="mail-icon" />
               <a
                 className={classes.footer__contact_link}
                 href="mailto:example@gmail.com"
@@ -62,13 +90,21 @@ export function Footer() {
               </a>
             </div>
             <div className={classes.footer__contact_connect}>
-              <img height={20} src="./phone-icon.svg" alt="phone-icon" />
+              <img src="./phone-icon-yl.svg" alt="phone-icon" />
               <a
                 className={classes.footer__contact_link}
                 href="tel:8 800 866 86 86"
               >
                 8 (800) 866-86-86
               </a>
+            </div>
+            <div className={classes.footer__contact_connect}>
+              <img src="./marker-icon-yl.svg" alt="phone-icon" />
+              <div className={classes.footer__contact_address}>
+                Краснодар,
+                <br />
+                ул.Новороссийская, 25
+              </div>
             </div>
           </div>
         </footer>

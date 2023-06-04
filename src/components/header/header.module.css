@@ -38,8 +38,7 @@
   white-space: nowrap;
 
   &:active,
-  &:hover,
-  &:focus {
+  &:hover {
     color: #008a3f;
   }
 }
