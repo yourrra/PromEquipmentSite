@@ -2,3 +2,56 @@
   min-height: calc(100vh - 251px);
   padding-top: 150px;
 }
+
+.contacts__contactblock {
+  padding: 50px 0;
+}
+
+.contacts__title {
+  color: #008a3f;
+}
+
+.contacts__topic {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.contacts__cardblock {
+  display: flex;
+  justify-content: space-between;
+
+  .contacts__card {
+    min-width: 420px;
+    padding: 19px 83px 24px 18px;
+    box-shadow: 0 1px 10px rgb(0 0 0 / 10%);
+
+    .contacts__card_title {
+      margin-bottom: 15px;
+      font-size: 28px;
+    }
+
+    .contacts__card_topic {
+      color: #6d6d6d;
+      font-size: 20px;
+    }
+
+    .contacts__card_phone {
+      margin-bottom: 12px;
+    }
+
+    .contacts__card_link {
+      color: #373737;
+      cursor: pointer;
+      font-size: 22px;
+      font-weight: 400;
+      text-decoration: none;
+      white-space: nowrap;
+
+      &:active,
+      &:hover {
+        color: #008a3f;
+      }
+    }
+  }
+}
