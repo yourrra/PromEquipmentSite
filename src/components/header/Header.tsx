@@ -53,7 +53,12 @@ export function Header() {
           </nav>
           <div className={classes.header__contact}>
             <div className={classes.header__contact_connect}>
-              <img height={20} src="./mail-icon.svg" alt="mail-icon" />
+              <img
+                height={20}
+                width={20}
+                src="./mail-icon.svg"
+                alt="mail-icon"
+              />
               <a
                 className={classes.header__contact_link}
                 href="mailto:example@gmail.com"

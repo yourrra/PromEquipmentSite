@@ -1,0 +1,16 @@
+.objects__wrapper {
+  min-height: calc(100vh - 251px);
+  padding-top: 150px;
+}
+
+.object__cardblock {
+  display: grid;
+  padding: 50px 0;
+  gap: 25px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+}
+
+.objects__title {
+  color: var(--green-color);
+}

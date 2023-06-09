@@ -1,5 +1,5 @@
-import { Line } from '../components/line/Line'
-import classes from './contacts.module.css'
+import { Line } from '../../components/line/Line'
+import classes from './Contacts.module.css'
 
 export function Contacts() {
   return (
