@@ -1,3 +1,4 @@
+import { Line } from '../components/line/Line'
 import classes from './contacts.module.css'
 
 export function Contacts() {
@@ -5,7 +6,7 @@ export function Contacts() {
     <div className="wrapper">
       <div className={classes.contacts__wrapper}>
         <h1 className={classes.contacts__title}>Контакты</h1>
-        <div className="title__line"></div>
+        <Line />
         <div className={classes.contacts__contactblock}>
           <h2 className={classes.contacts__topic}>Рабочие телефоны</h2>
           <div className={classes.contacts__cardblock}>
