@@ -1,0 +1,22 @@
+.service__card {
+  display: flex;
+  gap: 40px;
+
+  .card__title {
+    margin-bottom: 25px;
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 123.6%;
+  }
+
+  .card__description {
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150.6%;
+  }
+
+  img {
+    min-width: 450px;
+  }
+}

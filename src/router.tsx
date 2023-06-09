@@ -5,7 +5,7 @@ import { NotFound } from './pages/404/404'
 import { About } from './pages/about/About'
 import { Contacts } from './pages/contacts/Contacts'
 import { Equipment } from './pages/equipment/Equipment'
-import { Objects } from './pages/objacts/Objects'
+import { Objects } from './pages/objects/Objects'
 import { Services } from './pages/services/Services'
 import { Root } from './Root'
 import { ROUTES } from './constants/urls'
@@ -42,24 +42,4 @@ export const router = createBrowserRouter([
       },
     ],
   },
-  // {
-  //   path: URLS.ABOUT,
-  //   element: <About />,
-  // },
-  // {
-  //   path: URLS.CONTACTS,
-  //   element: <Contacts />,
-  // },
-  // {
-  //   path: URLS.EQUIPMENT,
-  //   element: <Equipment />,
-  // },
-  // {
-  //   path: URLS.OBJECTS,
-  //   element: <Objects />,
-  // },
-  // {
-  //   path: URLS.SERVICES,
-  //   element: <Services />,
-  // },
 ])
