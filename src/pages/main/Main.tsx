@@ -3,6 +3,7 @@ import { ROUTES } from '../../constants/urls'
 import classes from './Main.module.css'
 import { Button } from '../../components/Button/Button'
 import { Typography } from '../../components/Typography'
+import { Input } from '../../components/Input'
 
 export function Main() {
   return (
@@ -32,6 +33,7 @@ export function Main() {
             </Link>
           </div>
         </div>
+
         <div className={classes.main__list}>
           <Typography variant="h2" className={classes.list__title}>
             Применение собственных разработок и анализ опыта эксплуатации
@@ -60,7 +62,20 @@ export function Main() {
             </li>
           </ul>
         </div>
-        <Button>Test</Button>
+
+        <div className={classes.main__contactblock}>
+          <Typography variant="h2" className={classes.contactblock__title}>
+            Заголовок
+          </Typography>
+          <div className={classes.contactblock__input_wrapper}>
+            <Input placeholder="Введите ваше имя" />
+            <Input placeholder="Введите ваш номер телефона" />
+            <Input placeholder="Введите ваш адрес эл.почты" />
+          </div>
+          <div className={classes.contactblock__button_wrapper}>
+            <Button type="submit">Test</Button>
+          </div>
+        </div>
       </div>
     </div>
   )

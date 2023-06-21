@@ -5,13 +5,14 @@
 }
 
 .main__title {
+  margin-bottom: 50px;
   text-align: center;
 }
 
 .card__wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 50px 0;
+  margin-bottom: 100px;
   gap: 25px;
 }
 
@@ -41,7 +42,7 @@
 }
 
 .main__list {
-  padding: 50px 0;
+  margin-bottom: 50px;
 
   .list__title {
     margin-bottom: 25px;
@@ -53,5 +54,24 @@
     font-size: 20px;
     list-style-type: disc;
     text-align: justify;
+  }
+}
+
+.main__contactblock {
+  .contactblock__title {
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  .contactblock__input_wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+    gap: 25px;
+  }
+
+  .contactblock__button_wrapper {
+    display: flex;
+    justify-content: center;
   }
 }

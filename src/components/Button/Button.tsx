@@ -1,5 +1,5 @@
 import cn from 'classnames'
-import styles from './Button.module.css'
+import classes from './Button.module.css'
 import {
   type PropsWithChildren,
   type ButtonHTMLAttributes,
@@ -22,10 +22,10 @@ export const Button = memo(
       return (
         <button
           className={cn(
-            styles.Button,
+            classes.Button,
             {
-              [styles.isGreen]: variant === 'green',
-              [styles.isRed]: variant === 'red',
+              [classes.isGreen]: variant === 'green',
+              [classes.isRed]: variant === 'red',
             },
             className,
           )}
