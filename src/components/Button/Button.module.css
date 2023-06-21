@@ -1,0 +1,35 @@
+.Button {
+  padding: 12px 24px;
+  border: none;
+  background-color: transparent;
+  color: var(--white-color);
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  text-transform: uppercase;
+  transform: 200ms;
+
+  &.isGreen {
+    background-color: var(--green-color);
+
+    &:hover {
+      background-color: var(--gray-cokor);
+      color: var(--yellow-color);
+    }
+  }
+
+  &.isRed {
+    background-color: var(--colors-red-700);
+
+    &:hover {
+      background-color: var(--colors-red-800);
+    }
+  }
+
+  &:disabled,
+  &[disabled] {
+    background-color: var(--colors-gray-600);
+    pointer-events: none;
+  }
+}

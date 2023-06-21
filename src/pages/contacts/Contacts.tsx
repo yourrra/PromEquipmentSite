@@ -1,3 +1,4 @@
+import { Typography } from '../../components/Typography'
 import { Line } from '../../components/line/Line'
 import classes from './Contacts.module.css'
 
@@ -5,7 +6,7 @@ export function Contacts() {
   return (
     <div className="wrapper">
       <div className={classes.contacts__wrapper}>
-        <h1 className={classes.contacts__title}>Контакты</h1>
+        <Typography variant="h1-green">Контакты</Typography>
         <Line />
         <div className={classes.contacts__contactblock}>
           <h2 className={classes.contacts__topic}>Рабочие телефоны</h2>

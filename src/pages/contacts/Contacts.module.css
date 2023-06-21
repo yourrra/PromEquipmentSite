@@ -7,10 +7,6 @@
   padding: 50px 0;
 }
 
-.contacts__title {
-  color: var(--green-color);
-}
-
 .contacts__topic {
   display: flex;
   justify-content: center;
@@ -24,6 +20,7 @@
   .contacts__card {
     min-width: 420px;
     padding: 19px 83px 24px 18px;
+    border-radius: 12px;
     box-shadow: var(--shadow-white);
 
     .contacts__card_title {

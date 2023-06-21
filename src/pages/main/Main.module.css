@@ -3,3 +3,55 @@
   padding-top: 150px;
   padding-bottom: 50px;
 }
+
+.main__title {
+  text-align: center;
+}
+
+.card__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
+  gap: 25px;
+}
+
+.card {
+  width: 100%;
+  height: 400px;
+
+  .card__img {
+    height: 400px;
+    margin-bottom: 10px;
+    background-color: bisque;
+  }
+
+  .card__link {
+    color: #6d6d6d;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 400;
+    text-decoration: none;
+    white-space: nowrap;
+
+    &:active,
+    &:hover {
+      color: var(--green-color);
+    }
+  }
+}
+
+.main__list {
+  padding: 50px 0;
+
+  .list__title {
+    margin-bottom: 25px;
+  }
+
+  li {
+    margin-bottom: 10px;
+    margin-left: 50px;
+    font-size: 20px;
+    list-style-type: disc;
+    text-align: justify;
+  }
+}

@@ -1,5 +1,8 @@
 .service__card {
   display: flex;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: var(--shadow-white);
   gap: 40px;
 
   .card__title {

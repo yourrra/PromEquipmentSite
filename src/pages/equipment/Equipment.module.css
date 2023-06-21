@@ -2,3 +2,7 @@
   min-height: calc(100vh - 251px);
   padding-top: 150px;
 }
+
+.equipment__cardblock {
+  padding: 50px 0;
+}

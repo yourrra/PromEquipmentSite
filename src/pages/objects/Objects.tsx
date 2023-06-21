@@ -1,12 +1,13 @@
+import { Typography } from '../../components/Typography'
 import { Line } from '../../components/line/Line'
-import { PhotoCard } from '../../components/photoCard/PhotoCard'
+import { PhotoCard } from '../../components/photoCard'
 import classes from './Objects.module.css'
 
 export function Objects() {
   return (
     <div className="wrapper">
       <div className={classes.objects__wrapper}>
-        <h1 className={classes.objects__title}>Объекты</h1>
+        <Typography variant="h1-green">Объекты</Typography>
         <Line />
         <div className={classes.object__cardblock}>
           <PhotoCard />

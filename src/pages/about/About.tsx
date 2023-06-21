@@ -1,3 +1,4 @@
+import { Typography } from '../../components/Typography'
 import { Line } from '../../components/line/Line'
 import classes from './About.module.css'
 
@@ -5,7 +6,7 @@ export function About() {
   return (
     <div className="wrapper">
       <div className={classes.about__wrapper}>
-        <h1 className={classes.about__title}>О компании</h1>
+        <Typography variant="h1-green">О компании</Typography>
         <Line />
         <div className={classes.about__textblock}>
           <p>

@@ -39,7 +39,7 @@
 
   &:active,
   &:hover {
-    color: #008a3f;
+    color: var(--green-color);
   }
 }
 
