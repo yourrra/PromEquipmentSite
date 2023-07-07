@@ -1,6 +1,6 @@
 import classes from './Header.module.css'
 import { Link } from 'react-router-dom'
-import { ROUTES } from '../../constants/urls'
+import { ROUTES, EQUIPMENT } from '../../constants/urls'
 
 export function Header() {
   return (
@@ -32,10 +32,7 @@ export function Header() {
                 </Link>
               </li>
               <li>
-                <Link
-                  className={classes.header__nav_link}
-                  to={ROUTES.EQUIPMENT}
-                >
+                <Link className={classes.header__nav_link} to={EQUIPMENT()}>
                   Оборудование
                 </Link>
               </li>

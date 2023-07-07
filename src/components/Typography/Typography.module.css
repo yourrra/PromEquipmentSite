@@ -15,10 +15,15 @@
   line-height: 123.6%;
 }
 
-.isH2Extra {
+.isH2Extra,
+.isH2Green {
   font-size: 44px;
   font-weight: 400;
   line-height: 56px;
+}
+
+.isH2Green {
+  color: var(--green-color);
 }
 
 .isH2 {

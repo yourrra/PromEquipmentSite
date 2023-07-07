@@ -8,14 +8,7 @@ export function Equipment() {
       <div className={classes.equipment__wrapper}>
         <Typography variant="h1-green">Оборудование</Typography>
         <Line />
-        <div className={classes.equipment__cardblock}>
-          <Typography>
-            Компания «Агро-инжиниринг ЮГ» предлагает комплексные решения в сфере
-            хранения и переработки зерна. Современные технологии и многолетний
-            опыт специалистов компании позволяют создавать эффективные и
-            качественные продукты точно отвечающие потребностям наших клиентов.
-          </Typography>
-        </div>
+        <div className={classes.equipment__cardblock}></div>
       </div>
     </div>
   )

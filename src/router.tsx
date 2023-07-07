@@ -8,7 +8,9 @@ import { Equipment } from './pages/equipment/Equipment'
 import { Objects } from './pages/objects/Objects'
 import { Services } from './pages/services/Services'
 import { Root } from './Root'
-import { ROUTES } from './constants/urls'
+import { ROUTES, EQUIPMENT } from './constants/urls'
+import { Admin } from './pages/admin/Admin'
+import { Authorization } from './pages/login/Login'
 
 export const router = createBrowserRouter([
   {
@@ -29,7 +31,7 @@ export const router = createBrowserRouter([
         element: <Contacts />,
       },
       {
-        path: ROUTES.EQUIPMENT,
+        path: EQUIPMENT(),
         element: <Equipment />,
       },
       {
@@ -41,5 +43,13 @@ export const router = createBrowserRouter([
         element: <Services />,
       },
     ],
+  },
+  {
+    path: ROUTES.ADMIN,
+    element: <Admin />,
+  },
+  {
+    path: ROUTES.LOGIN,
+    element: <Authorization />,
   },
 ])

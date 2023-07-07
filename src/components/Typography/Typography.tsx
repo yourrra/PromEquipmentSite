@@ -10,6 +10,7 @@ type Props = PropsWithChildren<
       | 'h1-green'
       | 'h1'
       | 'h2-extra'
+      | 'h2-green'
       | 'h2'
       | 'small'
       | 'big'
@@ -37,6 +38,7 @@ export const Typography = ({
           [styles.isH1]: variant === 'h1',
           [styles.isH2Extra]: variant === 'h2-extra',
           [styles.isH2]: variant === 'h2',
+          [styles.isH2Green]: variant === 'h2-green',
           [styles.isSmall]: variant === 'small',
           [styles.isBig]: variant === 'big',
           [styles.isNormal]: variant === 'normal',

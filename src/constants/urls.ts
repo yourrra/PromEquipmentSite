@@ -4,7 +4,9 @@ enum ROUTES {
   CONTACTS = '/contacts',
   OBJECTS = '/objects',
   SERVICES = '/services',
-  EQUIPMENT = '/equipment',
+  ADMIN = '/admin',
+  LOGIN = '/login',
 }
+const EQUIPMENT = (id = ':id') => `/equipment/${id}`
 
-export { ROUTES }
+export { ROUTES, EQUIPMENT }
