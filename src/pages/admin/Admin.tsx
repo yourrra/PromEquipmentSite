@@ -1,8 +1,16 @@
+import { Navigate } from 'react-router-dom'
 import { Typography } from '../../components/Typography'
 import classes from './Admin.module.css'
+import { ROUTES } from '../../constants/urls'
+// import { useContext, useState } from 'react'
+// import { Context } from '../../main'
 
 export const Admin = () => {
-  return (
+  const isAuth = false
+
+  // const { auth } = useContext(Context)
+
+  return isAuth ? (
     <div className="wrapper">
       <div className={classes.admin__wrapper}>
         <Typography variant="h1-green">Админка</Typography>
@@ -11,5 +19,7 @@ export const Admin = () => {
         </div>
       </div>
     </div>
+  ) : (
+    <Navigate to={ROUTES.LOGIN} />
   )
 }

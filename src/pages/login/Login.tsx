@@ -1,9 +1,11 @@
+// import { Navigate } from 'react-router-dom'
 import { Button } from '../../components/Button'
 import { Input } from '../../components/Input'
 import { Typography } from '../../components/Typography'
 import classes from './Login.module.css'
+// import { ROUTES } from '../../constants/urls'
 
-export const Authorization = () => {
+export const Login = () => {
   // const { isAuth, setIsAuth } = useContext(AuthContext)
 
   // const login = event => {

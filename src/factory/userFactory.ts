@@ -7,6 +7,7 @@ export default class UserFactory {
     this._isAuth = false
     makeAutoObservable(this)
   }
+
   setIsAuth(bool: boolean) {
     this._isAuth = bool
   }

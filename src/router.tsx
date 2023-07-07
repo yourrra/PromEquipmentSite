@@ -10,7 +10,7 @@ import { Services } from './pages/services/Services'
 import { Root } from './Root'
 import { ROUTES, EQUIPMENT } from './constants/urls'
 import { Admin } from './pages/admin/Admin'
-import { Authorization } from './pages/login/Login'
+import { Login } from './pages/login/Login'
 
 export const router = createBrowserRouter([
   {
@@ -42,14 +42,21 @@ export const router = createBrowserRouter([
         path: ROUTES.SERVICES,
         element: <Services />,
       },
+      {
+        path: ROUTES.ADMIN,
+        element: <Admin />,
+      },
     ],
   },
   {
+    path: ROUTES.LOGIN,
+    element: <Login />,
+  },
+])
+
+export const authRouter = createBrowserRouter([
+  {
     path: ROUTES.ADMIN,
     element: <Admin />,
-  },
-  {
-    path: ROUTES.LOGIN,
-    element: <Authorization />,
   },
 ])
