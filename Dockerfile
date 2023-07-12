@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY . .
 
-RUN npm run ci
+RUN npm install
 
 RUN npm run build
 
