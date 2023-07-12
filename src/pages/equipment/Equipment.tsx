@@ -1,6 +1,6 @@
 import { Typography } from '../../components/Typography'
 import { Line } from '../../components/line/Line'
-import classes from './equipment.module.css'
+import classes from './Equipment.module.css'
 
 export function Equipment() {
   return (

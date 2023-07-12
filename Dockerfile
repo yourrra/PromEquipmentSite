@@ -4,11 +4,7 @@ WORKDIR /app
 
 COPY . .
 
-RUN npm i pnpm -g
-
-RUN pnpm i 
-
-RUN pnpm run build
+RUN npm run build
 
 
 FROM nginx:alpine

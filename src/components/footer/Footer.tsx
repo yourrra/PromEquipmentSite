@@ -1,5 +1,5 @@
 import { ROUTES } from '../../constants/urls'
-import classes from './Footer.module.css'
+import classes from './footer.module.css'
 import { Link } from 'react-router-dom'
 
 export function Footer() {

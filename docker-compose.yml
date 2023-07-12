@@ -10,6 +10,29 @@ services:
       - 443:443
     networks:
       - net
+  database:
+    image: postgres
+    restart: always
+    env_file:
+      - ./server/.env
+    ports:
+      - "5432:5432"
+    networks:
+      - net
+  server-go:
+    build:
+      context: .
+      dockerfile: ./server/docker/gochan.dockerfile
+    container_name: server-go
+    expose:
+      - 5000
+    ports:
+      - 5000:5000
+    networks:
+      - net
+    depends_on:
+      - web-app
+      - database
 networks:
   net:
     driver: bridge
